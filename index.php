@@ -19,6 +19,9 @@
       'content' => 'Добро пожаловать, Кирилл Шахов!'
     ));  
   });
+$app->get('/author/ , function () use($app) {
+    return '<h4 id="author" title="gossJS">Шахов Кирилл</h4>'; 
+  })->after($hdrs);
   
   $app->get('/add/{n1}/{n2}', function ($n1, $n2) use($app) {
     return '<h2>Сумма: </h2><h3>' . ($n1 + $n2) . '</h3>'; 
