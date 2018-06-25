@@ -31,7 +31,7 @@
     return '<h2>Деление: </h2><h3>' . ($n1 / $n2) . '</h3>'; 
   })->after($hdrs);
 
-  $app->get('/add/{n1}/{n2}', function ($n1, $n2) use($app) {
+  $app->get('/multi/{n1}/{n2}', function ($n1, $n2) use($app) {
     return '<h2>Умножение: </h2><h3>' . ($n1 * $n2) . '</h3>'; 
   })->after($hdrs);
 
